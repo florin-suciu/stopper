@@ -1,0 +1,1 @@
+start c:\Python27\pythonw.exe c:\work\python_repos\stopper\stopper.py
