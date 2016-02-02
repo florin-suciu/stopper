@@ -16,7 +16,8 @@ A simple webserver for shutting down the system it's running on.
 
 ### Windows
 1. update **stopper.bat** paths with the ones from your system
-2. copy **stopper.bat** to your startup folder (e.g. on windows 7 "c:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\") 
+2. copy **stopper.bat** to your startup folder (e.g. on windows 7 "c:\Users\YOUR_USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\")
+3. restart system
 
 ### Notes:
 * on unix systems flask must be installed in the root's python (e.g., **sudo which python**)
