@@ -9,7 +9,7 @@ app = Flask(__name__)
 def shutdown():
     """Detect OS and run appropriate shutdown command"""
     if platform.system() == "Windows":
-        os.system("shutdown /t 20 /f")
+        os.system("shutdown /t 20")
     else:
         os.system("shutdown now -h")
 
@@ -24,4 +24,4 @@ def main_page():
 
 
 if __name__ == '__main__':
-    app.run(port=9843, debug=True)
+    app.run(port=9843)
