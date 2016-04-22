@@ -1,5 +1,10 @@
 # stopper
-A simple webserver for shutting down the system it's running on.
+A simple webserver for shutting down the system it's running on remotely from your phone's web browser or the like.
+
+## How to
+* open **http://[machine_ip or machine_hostname]:9843/** in browser from pc/mobile
+* push the button
+* tested with windows 7, 10, fedora 23
 
 ## Setup instructions
 
@@ -7,6 +12,7 @@ A simple webserver for shutting down the system it's running on.
 * python 2.7
 * flask
 * root permission required for shutdown command on unix
+* phone is on same wifi or ports are open and you can access the server externally.
 
 ### Linux
 1. **sudo vi /etc/rc.local**
@@ -22,4 +28,3 @@ A simple webserver for shutting down the system it's running on.
 ### Notes:
 * on unix systems flask must be installed in the root's python (e.g., **sudo which python**)
 * make sure port 9843 is opened
-* open **http://[machine_ip or machine_hostname]:9843/** in browser from pc/mobile
