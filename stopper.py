@@ -1,5 +1,6 @@
 import os
 import platform
+import time
 
 from flask import Flask, render_template, request
 
@@ -24,4 +25,5 @@ def main_page():
 
 
 if __name__ == '__main__':
-    app.run(port=9843)
+    time.sleep(30)
+    app.run(host="192.168.1.17", port=9843)
