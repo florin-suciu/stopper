@@ -4,7 +4,7 @@ A simple webserver for shutting down the system it's running on remotely from yo
 ## How to
 * open **http://[machine_ip or machine_hostname]:9843/** in browser from pc/mobile
 * push the button
-* tested with windows 7, 10, fedora 23
+* tested with windows 7, 10, fedora 23, ubuntu 14.04
 
 ## Setup instructions
 
@@ -12,7 +12,10 @@ A simple webserver for shutting down the system it's running on remotely from yo
 * python 2.7
 * flask
 * root permission required for shutdown command on unix
-* phone is on same wifi or ports are open and you can access the server externally.
+* device you are accessing from is on the same wifi and ports are open or you can access the server externally.
+
+### All
+1. update the host param value on the line with app.run in stopper.py with the ip of the machine the server will be running on 
 
 ### Linux
 1. **sudo vi /etc/rc.local**
