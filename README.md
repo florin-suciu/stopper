@@ -14,9 +14,6 @@ A simple webserver for shutting down the system it's running on remotely from yo
 * root permission required for shutdown command on unix
 * device you are accessing from is on the same wifi and ports are open or you can access the server externally.
 
-### All
-1. update the host param value on the line with app.run in stopper.py with the ip of the machine the server will be running on 
-
 ### Linux
 1. **sudo vi /etc/rc.local**
     * add line with: **python [full_path_to_project_root]/stopper.py &**
